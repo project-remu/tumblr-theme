@@ -21,6 +21,11 @@
 @remu-pink: #ee3f64;
 @text-color: #bcbcbc;
 
+// mixins
+.font-bebas {
+	font-family: "BebasNeueSVG", "Bebas Neue", "League Gothic", "Ostrich Sans", Helvetica, Arial, sans-serif;
+}
+
 ::selection {
 	background-color: @remu-pink;
 	color: #fff;
@@ -78,6 +83,8 @@ header {
 		border: none;
 		.at2x('images/remu-blogtitle.png', 325px, 18px);
 		
+		&:hover { border: none; }
+		
 		h1 {
 			display: block;
 			width: 325px;
@@ -131,6 +138,15 @@ header {
 			margin: 30px auto;
 		}
 		
+		.post-meta {
+			.font-bebas;
+			
+			time {
+				margin-right: 5px;
+			}
+			
+		}
+		
 	}
 	
 }
@@ -148,7 +164,7 @@ footer {
 		width: 1024px;
 		text-align: right;
 		font-size: 15px;
-		font-family: "BebasNeueSVG";
+		.font-bebas;
 		
 		&:first-child { margin-top: 10px; }
 		
