@@ -1,0 +1,167 @@
+/*
+	 ______    ______    __  __     _     _
+	|____  \  |  ___/   /  \/  \   | |   | |
+	|  __  /  |  ___/  / /\  /\ \  | |___| |
+	|_|  \_\  |_____/ /_/  \/  \_\ `._____.´
+
+	REMU Tumblr theme
+	
+	Designed by zvuc <kimatg@gmail.com>
+	Markup by Premist <premist@me.com>
+
+*/
+
+
+// import
+@import "webfont.less";
+@import "reset.less";
+@import "retina.less";
+
+// variables
+@remu-pink: #ee3f64;
+@text-color: #bcbcbc;
+
+::selection {
+	background-color: @remu-pink;
+	color: #fff;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #ddd;
+	
+	&:hover {
+		color: @remu-pink;
+		border-bottom: 1px solid @remu-pink;
+	}
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	color: @text-color;
+}
+
+body {
+	.at2x('images/bg-pattern.gif', 3px, 3px);
+}
+
+header {
+	width: 100%;
+	height: 300px;
+	.at2x('images/header-hrepeat.png', 1024px, 300px);
+	
+	#bg-header {
+		position: absolute;
+		width: 1024px;
+		height: 300px;
+		.at2x('images/headerbg.png', 1024px, 300px);
+	}
+	
+	#remu-logo {
+		position: absolute;
+		width: 182px;
+		height: 193px;
+		top: 15px;
+		margin: 25px;
+		.at2x('images/remu-logo.png', 182px, 193px); 
+	}
+	
+	a {
+		position: relative;
+		display: block;
+		width: 325px;
+		height: 18px;
+		top: 110px;
+		left: 230px;
+		border: none;
+		.at2x('images/remu-blogtitle.png', 325px, 18px);
+		
+		h1 {
+			display: block;
+			width: 325px;
+			height: 18px;
+			text-indent: -9999em;
+		}
+		
+	}
+	
+}
+
+#container {
+	position: relative;
+	margin-top: -50px;
+	margin-left: 180px;
+	width: 800px;
+	min-height: 1024px;
+	
+	article {
+		width: 800px;
+		margin-bottom: 80px;
+		padding-left: 40px;
+		min-height: 400px;
+		.at2x('images/entrybg.png', 20px, 366px);
+		background-repeat: no-repeat;
+		
+		h2 {
+			font-size: 20px;
+			margin-bottom: 15px;
+			
+			a {
+				border: none;
+				&:hover { border: none; color: #fff; }
+			}
+		}
+		
+		p {
+			font-size: 14px;
+			line-height: 25px;
+			margin: 20px 0;
+		}
+		
+		b {
+			color: #fff;
+		}
+		
+		img {
+			position: relative;
+			display: block;
+			max-width: 60%;
+			margin: 30px auto;
+		}
+		
+	}
+	
+}
+
+footer {
+	position: relative;
+	display: block;
+	margin: 50px 0;
+	width: 100%;
+	height: 100px;
+	
+	p {
+		position: relative;
+		display: inline-block;
+		width: 1024px;
+		text-align: right;
+		font-size: 15px;
+		font-family: "BebasNeueSVG";
+		
+		&:first-child { margin-top: 10px; }
+		
+		a {
+			color: @text-color;
+			border-bottom: 1px solid @text-color;
+			
+			&:hover {
+				color: @text-color;
+				border-bottom: 1px solid @text-color;
+			}
+			
+		}
+	}
+	
+}
