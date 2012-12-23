@@ -11,15 +11,15 @@
 
 */
 
+// variables
+@base-url: "http://project-remu.github.com/remu-tumblr";
+@remu-pink: #ee3f64;
+@text-color: #bcbcbc;
 
 // import
 @import "webfont.less";
 @import "reset.less";
 @import "retina.less";
-
-// variables
-@remu-pink: #ee3f64;
-@text-color: #bcbcbc;
 
 // mixins
 .font-bebas {
@@ -49,19 +49,19 @@ html, body {
 }
 
 body {
-	.at2x('images/bg-pattern.gif', 3px, 3px);
+	.at2x('@{base-url}/images/bg-pattern.gif', 3px, 3px);
 }
 
 header {
 	width: 100%;
 	height: 300px;
-	.at2x('images/header-hrepeat.png', 1024px, 300px);
+	.at2x('@{base-url}/images/header-hrepeat.png', 1024px, 300px);
 	
 	#bg-header {
 		position: absolute;
 		width: 1024px;
 		height: 300px;
-		.at2x('images/headerbg.png', 1024px, 300px);
+		.at2x('@{base-url}/images/headerbg.png', 1024px, 300px);
 	}
 	
 	#remu-logo {
@@ -70,7 +70,7 @@ header {
 		height: 193px;
 		top: 15px;
 		margin: 25px;
-		.at2x('images/remu-logo.png', 182px, 193px); 
+		.at2x('@{base-url}/images/remu-logo.png', 182px, 193px); 
 	}
 	
 	a {
@@ -81,7 +81,7 @@ header {
 		top: 110px;
 		left: 230px;
 		border: none;
-		.at2x('images/remu-blogtitle.png', 325px, 18px);
+		.at2x('@{base-url}/images/remu-blogtitle.png', 325px, 18px);
 		
 		&:hover { border: none; }
 		
@@ -101,14 +101,13 @@ header {
 	margin-top: -50px;
 	margin-left: 180px;
 	width: 800px;
-	min-height: 1024px;
 	
 	article {
 		width: 800px;
 		margin-bottom: 80px;
 		padding-left: 40px;
 		min-height: 400px;
-		.at2x('images/entrybg.png', 20px, 366px);
+		.at2x('@{base-url}/images/entrybg.png', 20px, 366px);
 		background-repeat: no-repeat;
 		
 		h2 {
