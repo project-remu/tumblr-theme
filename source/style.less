@@ -35,7 +35,7 @@
 	-moz-border-image: url(@path) @slice repeat; 
 	-webkit-border-image: url(@path) @slice repeat; 
 	-o-border-image: url(@path) @slice repeat; 
-	border-image: url(@path) @slice repeat;
+	border-image: url(@path) @slice fill repeat;
 
 	@media all and (-webkit-min-device-pixel-ratio : 1.5) {
 		@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
@@ -45,7 +45,7 @@
 		-moz-border-image: url(~"@{at2x_path}") @slice2x repeat; 
 		-webkit-border-image: url(~"@{at2x_path}") @slice2x repeat; 
 		-o-border-image: url(~"@{at2x_path}") @slice2x repeat; 
-		border-image: url(~"@{at2x_path}") @slice2x repeat;			
+		border-image: url(~"@{at2x_path}") @slice2x fill repeat;			
 	}
 
 }
@@ -254,16 +254,7 @@ header {
 		
 	}
 	
-	.paging {
 
-		.prevpage {
-
-		}
-		.nextpage {
-			float: right;
-
-		}
-	}
 
 }
 
@@ -275,31 +266,76 @@ footer {
 	height: 100px;
 
 	.bg {
+		border-style: solid; 
+		border-width: 0px 0px 0px 710px; 
 		.border-image('@{base-url}/images/footerbg.png', ~'0 0 0 710', ~'0 0 0 1420', ~'0px 0px 0px 710px');
 		width: 100%;
 		height: 100px;
+		position: relative; 
+		z-index:1; 
 	}
 	
-	p {
-		position: relative;
-		display: inline-block;
-		width: 1024px;
-		text-align: right;
-		font-size: 15px;
-		.font-bebas;
-		
-		&:first-child { margin-top: 10px; }
-		
-		a {
-			color: @text-color;
-			border-bottom: 1px solid @text-color;
-			
-			&:hover {
-				color: @text-color;
-				border-bottom: 1px solid @text-color;
+	.container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index:2; 
+		height: 100px;
+		width: 980px;
+
+		.paging {
+
+			.pgbtn {
+				height: 20px;
+				width: 70px;
+				.font-bebas;
+				text-decoration: none;
+
+				&.prevpage {
+					.at2x('@{base-url}/images/page-prev-bullet.png', 20px, 40px);
+					background-position: left top;
+
+					&:hover {
+						background-position: left -20px;
+					}
+				}
+
+				&.nextpage {
+					.at2x('@{base-url}/images/page-prev-bullet.png', 20px, 40px);
+					background-position: right top;
+					float: right;
+					
+					&:hover {
+						background-position: right -20px;
+					}
+
+				}
+
 			}
-			
+		}
+		.copyright {
+
+			p {
+				position: relative;
+				display: inline-block;
+				width: 1024px;
+				text-align: right;
+				font-size: 15px;
+				.font-bebas;
+				
+				&:first-child { margin-top: 10px; }
+				
+				a {
+					color: @text-color;
+					border-bottom: 1px solid @text-color;
+					
+					&:hover {
+						color: @text-color;
+						border-bottom: 1px solid @text-color;
+					}
+					
+				}
+			}
 		}
 	}
-	
 }
