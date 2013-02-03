@@ -31,7 +31,7 @@
 	font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "NanumGothic", "Malgun Gothic", Helvetica, Arial, sans-serif;
 }
 
-.border-image (@path, @slice: 65 0 0 20, @slice2x: 130 0 0 40) {
+.border-image (@path, @slice: 65 0 0 20, @slice2x: 130 0 0 40, @2xsize: 65px 0px 0px 20px) {
 	-moz-border-image: url(@path) @slice repeat; 
 	-webkit-border-image: url(@path) @slice repeat; 
 	-o-border-image: url(@path) @slice repeat; 
@@ -41,11 +41,11 @@
 		@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
 
 		border-style: solid; 
-		border-width: 65px 0px 0px 20px; 
-		-moz-border-image: url("@{at2x_path}") @slice2x repeat; 
-		-webkit-border-image: url("@{at2x_path}") @slice2x repeat; 
-		-o-border-image: url("@{at2x_path}") @slice2x repeat; 
-		border-image: url("@{at2x_path}") @slice2x repeat;			
+		border-width: @2xsize; 
+		-moz-border-image: url(~"@{at2x_path}") @slice2x repeat; 
+		-webkit-border-image: url(~"@{at2x_path}") @slice2x repeat; 
+		-o-border-image: url(~"@{at2x_path}") @slice2x repeat; 
+		border-image: url(~"@{at2x_path}") @slice2x repeat;			
 	}
 
 }
@@ -136,7 +136,7 @@ header {
 	width: 790px;
 	
 	article {
-		width: 700px;
+		width: 600px;
 		margin-bottom: 180px;
 		border-style: solid; 
 		border-width: 65px 0px 0px 20px; 
@@ -161,7 +161,7 @@ header {
 		
 		.entry { 
 			min-height: 120px;
-			padding: 0 0 0 50px;
+			padding: 0 0 0 30px;
 			margin: -65px 0 20px 0;
 		}
 
@@ -178,7 +178,7 @@ header {
 		img {
 			position: relative;
 			display: block;
-			//max-width: 60%;
+			max-width: 90%;
 			margin: 30px auto;
 		}
 
@@ -213,14 +213,19 @@ header {
 			.at2x('@{base-url}/images/entrybg-bottom.png', 200px, 320px);
 			background-position: bottom right;
 			background-repeat: no-repeat;
-			padding: 150px 15px 5px 15px;
-			margin: -140px -30px 0 0;
+			padding: 100px 15px 5px 15px;
+			margin: -90px -30px 0 0;
 			.font-bebas;
 			
 			time {
 				margin-right: 5px;
 			}
 			
+		}
+
+		.postcode {
+			.font-bebas;
+			font-size: 6px;
 		}
 
 		/* post type-specific styles */
@@ -249,6 +254,17 @@ header {
 		
 	}
 	
+	.paging {
+
+		.prevpage {
+
+		}
+		.nextpage {
+			float: right;
+
+		}
+	}
+
 }
 
 footer {
@@ -257,6 +273,12 @@ footer {
 	margin: 50px 0;
 	width: 100%;
 	height: 100px;
+
+	.bg {
+		.border-image('@{base-url}/images/footerbg.png', ~'0 0 0 710', ~'0 0 0 1420', ~'0px 0px 0px 710px');
+		width: 100%;
+		height: 100px;
+	}
 	
 	p {
 		position: relative;
