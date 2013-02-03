@@ -15,7 +15,7 @@
 //@base-url: ".";
 @base-url: "http://project-remu.github.com/remu-tumblr-theme";
 @remu-pink: #fd45d1;
-@remu-pink2: #ee3f64;
+@remu-pink2: #ab4292;
 @text-color: #bcbcbc;
 
 // import
@@ -31,11 +31,12 @@
 	font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "NanumGothic", "Malgun Gothic", Helvetica, Arial, sans-serif;
 }
 
-.border-image (@path, @slice: 65 0 0 20, @slice2x: 130 0 0 40, @2xsize: 65px 0px 0px 20px) {
+.border-image (@path, @slice: 65 0 0 19, @slice2x: 130 0 0 38, @2xsize: 65px 0px 0px 19px) {
 	-moz-border-image: url(@path) @slice repeat; 
 	-webkit-border-image: url(@path) @slice repeat; 
 	-o-border-image: url(@path) @slice repeat; 
 	border-image: url(@path) @slice fill repeat;
+	border-color: transparent;
 
 	@media all and (-webkit-min-device-pixel-ratio : 1.5) {
 		@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
@@ -45,7 +46,8 @@
 		-moz-border-image: url(~"@{at2x_path}") @slice2x repeat; 
 		-webkit-border-image: url(~"@{at2x_path}") @slice2x repeat; 
 		-o-border-image: url(~"@{at2x_path}") @slice2x repeat; 
-		border-image: url(~"@{at2x_path}") @slice2x fill repeat;			
+		border-image: url(~"@{at2x_path}") @slice2x fill repeat;
+		border-color: transparent;			
 	}
 
 }
@@ -85,7 +87,7 @@ header {
 	
 	#bg-header {
 		position: absolute;
-		width: 1024px;
+		width: 980px;
 		height: 300px;
 		.at2x('@{base-url}/images/headerbg.png', 1024px, 300px);
 	}
@@ -141,16 +143,18 @@ header {
 		border-style: solid; 
 		border-width: 65px 0px 0px 20px; 
 		.border-image('@{base-url}/images/entrybg.png');
+		position: relative;
 
 		h1,h2,h3,h4,h5,h6 {
 			.font-bebas;
 		}
 
 
-		h2 { 
+		h2.title { 
 			width:100%;
 			height: 65px;
 			font-size: 24px; 
+			.font-bebas;
 
 			a {
 				border: none;
@@ -158,16 +162,21 @@ header {
 			}
 		}
 
+		h2 { font-size: 24px; }
+		h3 { font-size: 22px; }
+		h4 { font-size: 20px; }
+		h5 { font-size: 18px; }
+		h6 { font-size: 16px; }
 		
 		.entry { 
 			min-height: 120px;
 			padding: 0 0 0 30px;
 			margin: -65px 0 20px 0;
+			line-height: 1.8em;
 		}
 
 		p {
 			font-size: 13px;
-			line-height: 25px;
 			margin: 0 0 20px 0;
 		}
 		
@@ -183,21 +192,29 @@ header {
 		}
 
 		ul { 
-			margin-bottom: 10px;
+			margin: 10px 0;
+			padding: 0 0 0 8px;
 
 			li {
 				.at2x('@{base-url}/images/bulletsq.png', 5px, 5px);
 				background-repeat: no-repeat;
-				background-position: left 6px;
-				padding: 0 0 10px 15px;
+				background-position: left 10px;
+				padding: 0 0 5px 17px;
 			}
 		}
 
 		ol { 
-			margin-bottom: 10px;
+			margin: 10px 0;
+			padding: 0 0 0 25px;
 			li {
-				padding: 0 0 10px 15px;
+				padding: 0 0 5px 0;
 			}
+		}
+
+		blockquote {
+			margin: 15px 0 15px 10px;
+			border-left: 4px solid @remu-pink2;
+			padding: 10px 20px;
 		}
 
 		pre { 
@@ -225,12 +242,30 @@ header {
 
 		.postcode {
 			.font-bebas;
-			font-size: 6px;
+			font-size: 7px;
+			position: absolute;
+			bottom: -8px;
+			left: -16px;
+			color: #b3b3b3;
+			letter-spacing: 1px;
+			opacity: 0.6;
+
+			transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-webkit-transform: rotate(-90deg);
+			transform-origin: 0 0;
+			-moz-transform-origin: 0 0;
+			-webkit-transform-origin: 0 0;
+
 		}
 
 		/* post type-specific styles */
-		&.block-photo {
+		&.block-photo, &.block-photoset, {
 			.border-image('@{base-url}/images/entrybg-photo.png');
+
+		}
+
+		&.block-photo {
 			.entry { 
 				margin: -95px 0 20px 0;
 			}
@@ -246,6 +281,14 @@ header {
 
 		&.block-quote {
 			.border-image('@{base-url}/images/entrybg-quote.png');
+			.entry {
+				blockquote { font-size: 1.5em; margin: 10px 0; padding: 0; border: none; }
+				.source { float: right; }
+			}
+		}
+
+		&.block-chat {
+			.border-image('@{base-url}/images/entrybg-alt.png');
 			.entry {
 				blockquote { font-size: 1.5em; margin: 10px 0; padding: 0; }
 				.source { float: right; }
@@ -269,7 +312,6 @@ footer {
 		border-style: solid; 
 		border-width: 0px 0px 0px 710px; 
 		.border-image('@{base-url}/images/footerbg.png', ~'0 0 0 710', ~'0 0 0 1420', ~'0px 0px 0px 710px');
-		width: 100%;
 		height: 100px;
 		position: relative; 
 		z-index:1; 
@@ -284,16 +326,33 @@ footer {
 		width: 980px;
 
 		.paging {
+			width: 300px;
+			margin-left: 200px;
+			height: 100px;
+			position: relative;
 
 			.pgbtn {
+				display: block;
 				height: 20px;
 				width: 70px;
 				.font-bebas;
 				text-decoration: none;
+				border: none;
+				position: absolute;
+				font-size: 16px;
+
+				&:hover { 
+					border: none;
+				}
 
 				&.prevpage {
-					.at2x('@{base-url}/images/page-prev-bullet.png', 20px, 40px);
+					.at2x('@{base-url}/images/paging-prev-bullet.png', 20px, 40px);
 					background-position: left top;
+					background-repeat: no-repeat;
+					padding-left: 10px;
+					top: 10px;
+					left: 5px;
+					line-height: 12px;
 
 					&:hover {
 						background-position: left -20px;
@@ -301,9 +360,14 @@ footer {
 				}
 
 				&.nextpage {
-					.at2x('@{base-url}/images/page-prev-bullet.png', 20px, 40px);
+					.at2x('@{base-url}/images/paging-next-bullet.png', 20px, 40px);
 					background-position: right top;
-					float: right;
+					background-repeat: no-repeat;
+					padding-right: 10px;
+					top: 17px;
+					right: 70px;
+					text-align: right;
+					line-height: 28px;
 					
 					&:hover {
 						background-position: right -20px;
@@ -312,14 +376,38 @@ footer {
 				}
 
 			}
+
+			.pagejump {
+				height: 25px;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				margin: 0 0 22px 30px;
+				.font-bebas;
+
+				.pi {
+					padding: 0 2px;
+					margin-right: 2px;
+
+					&.current {
+						font-weight: bold;
+					}
+
+				}
+
+			}
 		}
 		.copyright {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px 0;
+			width: 250px;
 
 			p {
 				position: relative;
 				display: inline-block;
-				width: 1024px;
-				text-align: right;
+				width: 100%;
 				font-size: 15px;
 				.font-bebas;
 				
