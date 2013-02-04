@@ -470,6 +470,7 @@ body {
 			top: 90px;
 			left: 20px;
 			.at2x('@{base-url}/images/remu-blogtitle-small.png', 214px, 60px);
+			border: none;
 
 			h1 { 
 				display: none; 
@@ -489,9 +490,9 @@ body {
 		 	border-image: none;
 		 	-moz-border-image: none;
 		 	-webkit-border-image: none;
-		 	.at2x('@{base-url}/images/entrybg-top-mobile.png', 200px, 100px);
+		 	.at2x('@{base-url}/images/entrybg-top-mobile.png', 700px, 20px);
 		 	background-repeat: no-repeat;
-		 	background-position: -32px 0;
+		 	background-position: 0 0;
 		 	padding: 30px 0 0 0;
 
 		 	.entry {
@@ -506,6 +507,12 @@ body {
 		 		left: 20px;
 		 		text-align: right;
 		 	}
+
+		 	&.block-photo {
+				.entry { 
+					margin: 0;
+				}
+			}
 		}
 
 	}
