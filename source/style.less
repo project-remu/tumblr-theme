@@ -288,6 +288,10 @@ header {
 		&.block-photoset {
 			.photoset { 
 				margin: 0 0 15px 0;
+
+				iframe {
+					max-width: 100% !important;
+				}
 			}
 		}
 
@@ -485,10 +489,10 @@ body {
 		 	border-image: none;
 		 	-moz-border-image: none;
 		 	-webkit-border-image: none;
-		 	.at2x('@{base-url}/images/entrybg-top-mobile.png', 200px, 320px);
+		 	.at2x('@{base-url}/images/entrybg-top-mobile.png', 200px, 100px);
 		 	background-repeat: no-repeat;
-		 	background-position: top -10px;
-		 	padding: 20px 0 0 0;
+		 	background-position: -32px 0;
+		 	padding: 30px 0 0 0;
 
 		 	.entry {
 		 		padding: 0 10px;
@@ -497,9 +501,10 @@ body {
 
 		 	.postcode {
 		 		transform: none;
-		 		top: 0;
+		 		top: 10px;
 		 		bottom: inherit;
-
+		 		left: 20px;
+		 		text-align: right;
 		 	}
 		}
 
