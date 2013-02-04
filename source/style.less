@@ -52,6 +52,25 @@
 
 }
 
+.border-image-none {
+	-moz-border-image: none; 
+	-webkit-border-image: none ;
+	-o-border-image: none; 
+	border-image: none;
+	border-color: transparent;
+
+	@media all and (-webkit-min-device-pixel-ratio : 1.5) {
+
+		border-style: none; 
+		border-width: 0px; 
+		-moz-border-image: none; 
+		-webkit-border-image: none; 
+		-o-border-image: none; 
+		border-image: none;
+		border-color: transparent;			
+	}
+
+}
 
 ::selection { background-color: @remu-pink;	color: #fff; }
 ::-moz-selection  { background-color: @remu-pink;	color: #fff; }
@@ -160,6 +179,7 @@ header {
 			font-size: 24px; 
 			margin: 0;
 			.font-helvetica;
+			line-height: 1.1em;
 
 			a {
 				border: none;
@@ -452,69 +472,155 @@ footer {
 /* Mobile style overrides
 -------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
 
 body {
 
-	header { 
-		#bg-header { 
-			width: 100%;
-			background-position: -200px 0px;
-		}
-		#remu-logo, a.blogtitle { display: none; }
-		a.blogtitle-mobile {
-			display: block; 
-			width: 214px;
-			height: 60px;
-			position: absolute;
-			top: 90px;
-			left: 20px;
-			.at2x('@{base-url}/images/remu-blogtitle-small.png', 214px, 60px);
-			border: none;
+}
 
-			h1 { 
-				display: none; 
-				border: none; 
-			}
+header { 
+	#bg-header { 
+		width: 100%;
+		background-position: -200px 0px;
+	}
+	#remu-logo, a.blogtitle { display: none; }
+	a.blogtitle-mobile {
+		display: block; 
+		width: 214px;
+		height: 60px;
+		position: absolute;
+		top: 90px;
+		left: 20px;
+		.at2x('@{base-url}/images/remu-blogtitle-small.png', 214px, 60px);
+		border: none;
+
+		h1 { 
+			display: none; 
+			border: none; 
 		}
 	}
+}
 
-	#container {
+#container {
+	width: 100%;
+	margin-left: 0; 
+
+	article { 
 		width: 100%;
-		margin-left: 0; 
+		border-style: none; 
+		border-width: 0 0 0 0; 
+	 	border-image: none;
+	 	-moz-border-image: none;
+	 	-webkit-border-image: none;
+	 	.at2x('@{base-url}/images/entrybg-top-mobile.png', 700px, 20px);
+	 	background-repeat: no-repeat;
+	 	background-position: 0 10px;
+	 	padding: 35px 0 0 0;
+	 	margin: 0 0 10px;
+	 	overflow: hidden;
 
-		article { 
-			width: 100%;
-			border-style: none; 
-			border-width: 0 0 0 0; 
-		 	border-image: none;
-		 	-moz-border-image: none;
-		 	-webkit-border-image: none;
-		 	.at2x('@{base-url}/images/entrybg-top-mobile.png', 700px, 20px);
-		 	background-repeat: no-repeat;
-		 	background-position: 0 0;
-		 	padding: 30px 0 0 0;
+	 	.entry {
+	 		padding: 0 10px;
+	 		margin: 0;
+	 	}
 
-		 	.entry {
-		 		padding: 0 10px;
-		 		margin: 0;
-		 	}
+	 	.postcode {
+	 		transform: none;
+	 		-moz-transform: none;
+	 		-webkit-transform: none;
+	 		top: 15px;
+	 		right: 10px;
+	 		bottom: inherit;
+	 		left: inherit;
+	 		text-align: right;
+	 	}
 
-		 	.postcode {
-		 		transform: none;
-		 		top: 10px;
-		 		bottom: inherit;
-		 		left: 20px;
-		 		text-align: right;
-		 	}
+		.post-meta {
+			float:right;
+			width: 170px;
+			height: 15px;
+			.at2x('@{base-url}/images/entrybg-bottom.png', 200px, 320px);
+			background-position: bottom right;
+			background-repeat: no-repeat;
+			padding: 100px 15px 5px 15px;
+			margin: -90px -30px 0 0;
+			.font-bebas;
 
-		 	&.block-photo {
-				.entry { 
-					margin: 0;
+			a { 
+				border-bottom: none; color: @text-color; 
+				&:hover { color: #fff; }
+			}
+
+			time {
+				margin-right: 5px;
+			}
+
+			.notes {
+				margin-left: 7px;
+			}
+			
+		}
+
+		/* post type-specific styles */
+		&.block-photo, &.block-photoset, &.block-audio, &.block-video, &.block-quote, &.block-chat  {
+			.border-image-none;
+
+		}
+
+		&.block-photo {
+			.entry { 
+				margin: 0;
+			}
+		}
+
+		&.block-photoset {
+			.photoset { 
+				margin: 0 0 15px 0;
+
+				iframe {
+					max-width: 100% !important;
 				}
 			}
 		}
 
+	}
+
+}
+
+
+
+footer {
+	.at2x('@{base-url}/images/footerbg.png', 1024px, 100px);
+	background-repeat: no-repeat;
+	background-position: -200px 0;
+
+	.bg {
+		display: none;
+	}
+	
+	.container {
+		position: relative;
+		z-index:2; 
+		height: 150px;
+		width: 100%;
+
+		.paging {
+			margin-left: 0;
+		}
+
+		.copyright {
+			position: relative;
+			top: 0;
+			right: 0;
+			padding: 10px 0;
+			width: 100%;
+
+			p {
+				display: inline-block;
+				width: auto;
+
+			}
+		}
 	}
 }
 
