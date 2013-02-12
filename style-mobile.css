@@ -90,7 +90,7 @@ header a.blogtitle-mobile h1 {
   -webkit-border-image: none;
   background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-top-mobile.png');
   background-repeat: no-repeat;
-  background-position: 10px 0px;
+  background-position: 0;
   padding: 35px 0 0 0;
   margin: 0 0 10px;
   overflow: hidden;
