@@ -1,0 +1,231 @@
+/*
+	 ______    ______    __  __     _     _
+	|____  \  |  ___/   /  \/  \   | |   | |
+	|  __  /  |  ___/  / /\  /\ \  | |___| |
+	|_|  \_\  |_____/ /_/  \/  \_\ `._____.´
+
+	REMU Tumblr theme MOBILE
+	
+	Designed by zvuc <kimatg@gmail.com>
+	Markup by Premist <premist@me.com>
+
+*/
+
+// variables
+//@base-url: ".";
+@base-url: "http://project-remu.github.com/remu-tumblr-theme";
+@remu-pink: #fd45d1;
+@remu-pink2: #ab4292;
+@text-color: #bcbcbc;
+
+// import
+@import "webfont.less";
+@import "retina.less";
+
+// mixins
+.font-bebas {
+	font-family: "BebasNeueSVG", "Bebas Neue", "League Gothic", "Ostrich Sans", "Hiragino Sans", "Apple SD Gothic Neo","AppleSDGothicNeo","SDGothicNeo1OTF","Malgun Gothic","Nanum Gothic","NanumGothic","Dotum", Helvetica, Arial, sans-serif;
+}
+.font-helvetica {
+	font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Apple SD Gothic Neo","AppleSDGothicNeo","SDGothicNeo1OTF","Malgun Gothic","Nanum Gothic","NanumGothic","Dotum", Helvetica, Arial, sans-serif;
+}
+
+.border-image (@path, @slice: 65 0 0 19, @slice2x: 130 0 0 38, @2xsize: 65px 0px 0px 19px) {
+	-moz-border-image: url(@path) @slice repeat; 
+	-webkit-border-image: url(@path) @slice repeat; 
+	-o-border-image: url(@path) @slice repeat; 
+	border-image: url(@path) @slice fill repeat;
+	border-color: transparent;
+
+	@media all and (-webkit-min-device-pixel-ratio : 1.5) {
+		@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
+
+		border-style: solid; 
+		border-width: @2xsize; 
+		-moz-border-image: url(~"@{at2x_path}") @slice2x repeat; 
+		-webkit-border-image: url(~"@{at2x_path}") @slice2x repeat; 
+		-o-border-image: url(~"@{at2x_path}") @slice2x repeat; 
+		border-image: url(~"@{at2x_path}") @slice2x fill repeat;
+		border-color: transparent;			
+	}
+
+}
+
+.border-image-none {
+	-moz-border-image: none; 
+	-webkit-border-image: none ;
+	-o-border-image: none; 
+	border-image: none;
+	border-color: transparent;
+
+	@media all and (-webkit-min-device-pixel-ratio : 1.5) {
+
+		border-style: none; 
+		border-width: 0px; 
+		-moz-border-image: none; 
+		-webkit-border-image: none; 
+		-o-border-image: none; 
+		border-image: none;
+		border-color: transparent;			
+	}
+
+}
+
+
+
+/* mobile style overrides ----------------------------------------------------- */
+
+header { 
+	height: 200px;
+
+	#bg-header { 
+		width: 100%;
+		height: 200px;
+		background-position: -230px -50px;
+	}
+	#remu-logo, a.blogtitle { display: none; }
+	a.blogtitle-mobile {
+		display: block; 
+		width: 214px;
+		height: 60px;
+		position: absolute;
+		top: 39px;
+		left: 0px;
+		.at2x('@{base-url}/images/remu-blogtitle-small.png', 214px, 60px);
+		border: none;
+
+		h1 { 
+			display: none; 
+			border: none; 
+		}
+	}
+}
+
+#container {
+	width: 100%;
+	margin-left: 0; 
+
+	article { 
+		width: 100%;
+		border-style: none; 
+		border-width: 0 0 0 0; 
+	 	border-image: none;
+	 	-moz-border-image: none;
+	 	-webkit-border-image: none;
+	 	.at2x('@{base-url}/images/entrybg-top-mobile.png', 700px, 20px);
+	 	background-repeat: no-repeat;
+	 	background-position: 10px 0px;
+	 	padding: 35px 0 0 0;
+	 	margin: 0 0 10px;
+	 	overflow: hidden;
+
+	 	h2.title {
+	 		font-size: 22px;
+	 	}
+
+	 	.entry {
+	 		padding: 0 10px;
+	 		margin: 0;
+	 	}
+
+	 	.postcode {
+	 		transform: none;
+	 		-moz-transform: none;
+	 		-webkit-transform: none;
+	 		top: 10px;
+	 		right: 10px;
+	 		bottom: inherit;
+	 		left: inherit;
+	 		text-align: right;
+	 	}
+
+		.post-meta {
+			float:right;
+			width: 170px;
+			height: 15px;
+			.at2x('@{base-url}/images/entrybg-bottom.png', 200px, 320px);
+			background-position: bottom right;
+			background-repeat: no-repeat;
+			padding: 100px 15px 5px 15px;
+			margin: -90px -30px 0 0;
+			.font-bebas;
+
+			a { 
+				border-bottom: none; color: @text-color; 
+				&:hover { color: #fff; }
+			}
+
+			time {
+				margin-right: 5px;
+			}
+
+			.notes {
+				margin-left: 7px;
+			}
+			
+		}
+
+		/* post type-specific styles */
+		&.block-photo, &.block-photoset, &.block-audio, &.block-video, &.block-quote, &.block-chat  {
+			.border-image-none;
+
+		}
+
+		&.block-photo {
+			.entry { 
+				margin: 0;
+			}
+		}
+
+		&.block-photoset {
+			.photoset { 
+				margin: 0 0 15px 0;
+				max-width: 100% !important;
+			}
+		}
+
+	}
+
+}
+
+
+
+footer {
+	.at2x('@{base-url}/images/footerbg.png', 1024px, 100px);
+	background-repeat: no-repeat;
+	background-position: -200px 0;
+
+	.bg {
+		display: none;
+	}
+	
+	.container {
+		position: relative;
+		z-index:2; 
+		height: 150px;
+		width: 100%;
+
+		.paging {
+			margin-left: 0;
+		}
+
+		.copyright {
+			position: relative;
+			top: 0;
+			right: 0;
+			padding: 10px 10px;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			p {
+				display: inline-block;
+				width: auto;
+				margin-right: 10px;
+
+			}
+		}
+	}
+}
+
