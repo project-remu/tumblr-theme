@@ -848,9 +848,12 @@ footer .container .paging .pagejump {
 footer .container .paging .pagejump .pi {
   padding: 0 2px;
   margin-right: 2px;
+  border-bottom: none;
 }
 footer .container .paging .pagejump .pi.current {
   font-weight: bold;
+  color: #fd45d1;
+  border-bottom: 1px solid #fff;
 }
 footer .container .copyright {
   position: absolute;
