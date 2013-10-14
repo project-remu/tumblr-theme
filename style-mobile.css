@@ -13,7 +13,7 @@
 */
 @font-face {
   font-family: 'BebasNeueSVG';
-  src: url('http://project-remu.github.com/remu-tumblr-theme/bebasneue.svg') format('svg');
+  src: url('http://project-remu.github.io/tumblr-theme/bebasneue.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,12 +63,12 @@ header a.blogtitle-mobile {
   position: absolute;
   top: 40px;
   left: 0px;
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/remu-blogtitle-small.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/remu-blogtitle-small.png');
   border: none;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   header a.blogtitle-mobile {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/remu-blogtitle-small@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/remu-blogtitle-small@2x.png');
     background-size: 214px 60px;
   }
 }
@@ -88,7 +88,7 @@ header a.blogtitle-mobile h1 {
   border-image: none;
   -moz-border-image: none;
   -webkit-border-image: none;
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-top-mobile.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-top-mobile.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   padding: 35px 0 0 0;
@@ -99,7 +99,7 @@ header a.blogtitle-mobile h1 {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #container article {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-top-mobile@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-top-mobile@2x.png');
     background-size: 700px 20px;
   }
 }
@@ -125,7 +125,7 @@ header a.blogtitle-mobile h1 {
   float: right;
   width: 170px;
   height: 15px;
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-bottom.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-bottom.png');
   background-position: bottom right;
   background-repeat: no-repeat;
   padding: 100px 15px 5px 15px;
@@ -134,7 +134,7 @@ header a.blogtitle-mobile h1 {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #container article .post-meta {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-bottom@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-bottom@2x.png');
     background-size: 200px 320px;
   }
 }
@@ -187,7 +187,7 @@ header a.blogtitle-mobile h1 {
   max-width: 100% !important;
 }
 footer {
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg.png');
   background-repeat: no-repeat;
   background-position: -200px 0;
   overflow: hidden;
@@ -196,7 +196,7 @@ footer {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   footer {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg@2x.png');
     background-size: 1024px 100px;
   }
 }
