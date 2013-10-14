@@ -13,7 +13,7 @@
 */
 @font-face {
   font-family: 'BebasNeueSVG';
-  src: url('http://project-remu.github.com/remu-tumblr-theme/bebasneue.svg') format('svg');
+  src: url('http://project-remu.github.io/tumblr-theme/bebasneue.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -384,23 +384,23 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Apple SD Gothic Neo", "AppleSDGothicNeo", "SDGothicNeo1OTF", "Malgun Gothic", "Nanum Gothic", "NanumGothic", "Dotum", Helvetica, Arial, sans-serif;
 }
 body {
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/bg-pattern.gif');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/bg-pattern.gif');
   font-size: 75%;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   body {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/bg-pattern@2x.gif');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/bg-pattern@2x.gif');
     background-size: 3px 3px;
   }
 }
 header {
   width: 100%;
   height: 300px;
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/header-hrepeat.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/header-hrepeat.png');
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   header {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/header-hrepeat@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/header-hrepeat@2x.png');
     background-size: 1024px 300px;
   }
 }
@@ -408,11 +408,11 @@ header #bg-header {
   position: absolute;
   width: 980px;
   height: 300px;
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/headerbg.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/headerbg.png');
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   header #bg-header {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/headerbg@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/headerbg@2x.png');
     background-size: 1024px 300px;
   }
 }
@@ -444,11 +444,11 @@ header a.blogtitle {
   top: 110px;
   left: 240px;
   border: none;
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/remu-blogtitle.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/remu-blogtitle.png');
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   header a.blogtitle {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/remu-blogtitle@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/remu-blogtitle@2x.png');
     background-size: 325px 18px;
   }
 }
@@ -475,10 +475,10 @@ header a.blogtitle-mobile {
   margin-bottom: 180px;
   border-style: solid;
   border-width: 65px 0px 0px 20px;
-  -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg.png') 65 0 0 19 repeat;
-  -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg.png') 65 0 0 19 repeat;
-  -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg.png') 65 0 0 19 repeat;
-  border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg.png') 65 0 0 19 fill repeat;
+  -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg.png') 65 0 0 19 repeat;
+  -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg.png') 65 0 0 19 repeat;
+  -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg.png') 65 0 0 19 repeat;
+  border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg.png') 65 0 0 19 fill repeat;
   border-color: transparent;
   position: relative;
   /* post type-specific styles */
@@ -488,10 +488,10 @@ header a.blogtitle-mobile {
   #container article {
     border-style: solid;
     border-width: 65px 0px 0px 19px;
-    -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg@2x.png') 130 0 0 38 repeat;
-    -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg@2x.png') 130 0 0 38 repeat;
-    -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg@2x.png') 130 0 0 38 repeat;
-    border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg@2x.png') 130 0 0 38 fill repeat;
+    -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg@2x.png') 130 0 0 38 repeat;
+    -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg@2x.png') 130 0 0 38 repeat;
+    -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg@2x.png') 130 0 0 38 repeat;
+    border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg@2x.png') 130 0 0 38 fill repeat;
     border-color: transparent;
   }
 }
@@ -591,7 +591,7 @@ header a.blogtitle-mobile {
   float: right;
   width: 170px;
   height: 15px;
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-bottom.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-bottom.png');
   background-position: bottom right;
   background-repeat: no-repeat;
   padding: 100px 15px 5px 15px;
@@ -600,7 +600,7 @@ header a.blogtitle-mobile {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #container article .post-meta {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-bottom@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-bottom@2x.png');
     background-size: 200px 320px;
   }
 }
@@ -635,10 +635,10 @@ header a.blogtitle-mobile {
 }
 #container article.block-photo,
 #container article.block-photoset {
-  -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo.png') 65 0 0 19 repeat;
-  -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo.png') 65 0 0 19 repeat;
-  -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo.png') 65 0 0 19 repeat;
-  border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo.png') 65 0 0 19 fill repeat;
+  -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo.png') 65 0 0 19 repeat;
+  -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo.png') 65 0 0 19 repeat;
+  -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo.png') 65 0 0 19 repeat;
+  border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo.png') 65 0 0 19 fill repeat;
   border-color: transparent;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -646,10 +646,10 @@ header a.blogtitle-mobile {
   #container article.block-photoset {
     border-style: solid;
     border-width: 65px 0px 0px 19px;
-    -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 repeat;
-    -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 repeat;
-    -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 repeat;
-    border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 fill repeat;
+    -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 repeat;
+    -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 repeat;
+    -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 repeat;
+    border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-photo@2x.png') 130 0 0 38 fill repeat;
     border-color: transparent;
   }
 }
@@ -663,56 +663,56 @@ header a.blogtitle-mobile {
   max-width: 100% !important;
 }
 #container article.block-audio {
-  -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio.png') 65 0 0 19 repeat;
-  -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio.png') 65 0 0 19 repeat;
-  -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio.png') 65 0 0 19 repeat;
-  border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio.png') 65 0 0 19 fill repeat;
+  -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio.png') 65 0 0 19 repeat;
+  -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio.png') 65 0 0 19 repeat;
+  -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio.png') 65 0 0 19 repeat;
+  border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio.png') 65 0 0 19 fill repeat;
   border-color: transparent;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #container article.block-audio {
     border-style: solid;
     border-width: 65px 0px 0px 19px;
-    -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 repeat;
-    -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 repeat;
-    -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 repeat;
-    border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 fill repeat;
+    -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 repeat;
+    -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 repeat;
+    -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 repeat;
+    border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-audio@2x.png') 130 0 0 38 fill repeat;
     border-color: transparent;
   }
 }
 #container article.block-video {
-  -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video.png') 65 0 0 19 repeat;
-  -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video.png') 65 0 0 19 repeat;
-  -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video.png') 65 0 0 19 repeat;
-  border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video.png') 65 0 0 19 fill repeat;
+  -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video.png') 65 0 0 19 repeat;
+  -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video.png') 65 0 0 19 repeat;
+  -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video.png') 65 0 0 19 repeat;
+  border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video.png') 65 0 0 19 fill repeat;
   border-color: transparent;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #container article.block-video {
     border-style: solid;
     border-width: 65px 0px 0px 19px;
-    -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 repeat;
-    -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 repeat;
-    -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 repeat;
-    border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 fill repeat;
+    -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 repeat;
+    -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 repeat;
+    -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 repeat;
+    border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-video@2x.png') 130 0 0 38 fill repeat;
     border-color: transparent;
   }
 }
 #container article.block-quote {
-  -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote.png') 65 0 0 19 repeat;
-  -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote.png') 65 0 0 19 repeat;
-  -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote.png') 65 0 0 19 repeat;
-  border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote.png') 65 0 0 19 fill repeat;
+  -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote.png') 65 0 0 19 repeat;
+  -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote.png') 65 0 0 19 repeat;
+  -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote.png') 65 0 0 19 repeat;
+  border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote.png') 65 0 0 19 fill repeat;
   border-color: transparent;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #container article.block-quote {
     border-style: solid;
     border-width: 65px 0px 0px 19px;
-    -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 repeat;
-    -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 repeat;
-    -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 repeat;
-    border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 fill repeat;
+    -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 repeat;
+    -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 repeat;
+    -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 repeat;
+    border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-quote@2x.png') 130 0 0 38 fill repeat;
     border-color: transparent;
   }
 }
@@ -726,20 +726,20 @@ header a.blogtitle-mobile {
   float: right;
 }
 #container article.block-chat {
-  -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt.png') 65 0 0 19 repeat;
-  -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt.png') 65 0 0 19 repeat;
-  -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt.png') 65 0 0 19 repeat;
-  border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt.png') 65 0 0 19 fill repeat;
+  -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt.png') 65 0 0 19 repeat;
+  -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt.png') 65 0 0 19 repeat;
+  -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt.png') 65 0 0 19 repeat;
+  border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt.png') 65 0 0 19 fill repeat;
   border-color: transparent;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #container article.block-chat {
     border-style: solid;
     border-width: 65px 0px 0px 19px;
-    -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 repeat;
-    -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 repeat;
-    -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 repeat;
-    border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 fill repeat;
+    -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 repeat;
+    -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 repeat;
+    -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 repeat;
+    border-image: url('http://project-remu.github.io/tumblr-theme/images/entrybg-alt@2x.png') 130 0 0 38 fill repeat;
     border-color: transparent;
   }
 }
@@ -753,10 +753,10 @@ footer {
 footer .bg {
   border-style: solid;
   border-width: 0px 0px 0px 710px;
-  -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg.png') 0 0 0 710 repeat;
-  -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg.png') 0 0 0 710 repeat;
-  -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg.png') 0 0 0 710 repeat;
-  border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg.png') 0 0 0 710 fill repeat;
+  -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg.png') 0 0 0 710 repeat;
+  -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg.png') 0 0 0 710 repeat;
+  -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg.png') 0 0 0 710 repeat;
+  border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg.png') 0 0 0 710 fill repeat;
   border-color: transparent;
   height: 100px;
   position: relative;
@@ -766,10 +766,10 @@ footer .bg {
   footer .bg {
     border-style: solid;
     border-width: 0px 0px 0px 710px;
-    -moz-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 repeat;
-    -webkit-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 repeat;
-    -o-border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 repeat;
-    border-image: url('http://project-remu.github.com/remu-tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 fill repeat;
+    -moz-border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 repeat;
+    -webkit-border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 repeat;
+    -o-border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 repeat;
+    border-image: url('http://project-remu.github.io/tumblr-theme/images/footerbg@2x.png') 0 0 0 1420 fill repeat;
     border-color: transparent;
   }
 }
@@ -811,7 +811,7 @@ footer .container .paging .pgbtn.prevpage {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   footer .container .paging .pgbtn.prevpage {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/paging-prev-bullet@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/paging-prev-bullet@2x.png');
     background-size: 20px 40px;
   }
 }
@@ -819,7 +819,7 @@ footer .container .paging .pgbtn.prevpage:hover {
   background-position: left -20px;
 }
 footer .container .paging .pgbtn.nextpage {
-  background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/paging-next-bullet.png');
+  background-image: url('http://project-remu.github.io/tumblr-theme/images/paging-next-bullet.png');
   background-position: right top;
   background-repeat: no-repeat;
   padding-right: 10px;
@@ -830,7 +830,7 @@ footer .container .paging .pgbtn.nextpage {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   footer .container .paging .pgbtn.nextpage {
-    background-image: url('http://project-remu.github.com/remu-tumblr-theme/images/paging-next-bullet@2x.png');
+    background-image: url('http://project-remu.github.io/tumblr-theme/images/paging-next-bullet@2x.png');
     background-size: 20px 40px;
   }
 }
